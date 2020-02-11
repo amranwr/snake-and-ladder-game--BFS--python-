@@ -7,7 +7,6 @@ def go():
     frontier = [0]
     f =1
     while frontier:
-        print(frontier)
         next =[]
         for u in frontier:
             if u <100:
@@ -31,6 +30,7 @@ def go():
                             next.append(i)
         frontier = next
         f+=1
+    print("the minimum throws to win :{} \nthe shortest path :".format(level[100]))
     shortest_path(parent ,0 , 100)
 
 
